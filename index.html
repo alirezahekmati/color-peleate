@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/22c7e43814.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto:ital,wght@0,400;0,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="light-toggle">
+        <img src="bothlights.svg" alt="" class=" light-mode" onclick="toggleLight()">
+        
+    </div>
+    <div class="container">
+        
+        <div class="container-up">
+            
+            <input type="color" value="#8e44ad">
+            <div class="container-up-mode">
+                <div class="mode-default" onclick="modeChooice(event)">
+                    <span>Monochrome</span>
+                    <img src="arrow-down.svg" alt="">
+                </div>
+                <div class="mode-select hidden">
+                    <div class="mode mode-Monochrome hidden" onclick="modeChooice(event)" onmouseenter="checkmark(event)">
+                        <span>Monochrome</span>
+                        <img src="check.svg" class="hidden" alt="">
+                    </div>
+                    <div class="mode mode-Monochrome-dark hidden" onclick="modeChooice(event)" onmouseenter="checkmark(event)">
+                        <span>Monochrome-dark</span>
+                        <img src="check.svg" class="hidden" alt="">
+                    </div>
+                    <div class="mode mode-Monochrome-light hidden" onclick="modeChooice(event)" onmouseenter="checkmark(event)">
+                        <span>Monochrome-light</span>
+                        <img src="check.svg" class="hidden" alt="">
+                    </div>
+                    <div class="mode mode-Analogic hidden" onclick="modeChooice(event)" onmouseenter="checkmark(event)">
+                        <span>Analogic</span>
+                        <img src="check.svg" class="hidden" alt="">
+                    </div>
+                    <div class="mode mode-Complement hidden" onclick="modeChooice(event)" onmouseenter="checkmark(event)">
+                        <span>Complement</span>
+                        <img src="check.svg" class="hidden" alt="">
+                    </div>
+                    <div class="mode mode-Analogic-complement hidden" onclick="modeChooice(event)" onmouseenter="checkmark(event)">
+                        <span>Analogic-complement</span>
+                        <img src="check.svg" class="hidden" alt="">
+                    </div>
+                    <div class="mode mode-Triad hidden" onclick="modeChooice(event)" onmouseenter="checkmark(event)">
+                        <span>Triad</span>
+                        <img src="check.svg" class="hidden" alt="">
+                    </div> 
+                </div>
+                
+                
+            </div>
+            <button class="get-colors btn-grad">Get color scheme</button>
+        </div>
+        <div class="container-middle">
+            <div class="color color-1" onclick="myFunction(event)"> c o p y</div>
+            <div class="color color-2" onclick="myFunction(event)"> c o p y</div>
+            <div class="color color-3" onclick="myFunction(event)"> c o p y</div>
+            <div class="color color-4" onclick="myFunction(event)"> c o p y</div>
+            <div class="color color-5" onclick="myFunction(event)"> c o p y</div>
+        </div>
+        <div class="container-down">
+            <div class="color-code color-code-1" onclick="myFunction(event)">color-code</div>
+            <div class="color-code color-code-2" onclick="myFunction(event)">color-code</div>
+            <div class="color-code color-code-3" onclick="myFunction(event)">color-code</div>
+            <div class="color-code color-code-4" onclick="myFunction(event)">color-code</div>
+            <div class="color-code color-code-5" onclick="myFunction(event)">color-code</div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
