@@ -127,6 +127,7 @@ function checkmark(event){{
 
 let istoggleLight = false
 let all =[ ...document.querySelectorAll(".color-code")]
+let ball= document.querySelector(".container-up-mode .mode-select")
 function toggleLight(){
     istoggleLight = !istoggleLight
     if(istoggleLight){
@@ -134,7 +135,7 @@ function toggleLight(){
         document.body.style.color="white"
         document.querySelector(".light-toggle").style.backgroundColor="yellow"
         //ask why this doesnt work on stackoverflow *************************************************************************
-        
+        ball.style.backgroundColor="#858585"
         all.map(function(each){
             each.style.color="black"
         })
